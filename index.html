@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMarker</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container pt-2 ">
+<h1 class="pb-3 text-muted">BookMarker</h1>
+<hr>
+
+  <!-- start input  -->
+<div class="bookmarker  p-5 my-5 shadow-lg text-center">
+    <h2>Bookmark your favorite sites </h2>
+   <div class="text my-5">
+    <p class="text-center ">site Name</p>
+    <input type="text" class="form-control mb-3" id="Name" ">
+    <p class="text-center">site URL</p>
+    <input type="text" class="form-control mb-3" id="URL" ">
+<div id="URLAlert" class="d-none alert alert-primary slert-dismissible fade show" role="alert">
+
+</div>
+
+
+    <button  class="btn btn-primary  mt-3"  id="addProduct">AddProduct</button>
+
+
+
+   </div>
+</div>
+   <!-- end input -->
+     <!-- start search -->
+<input onkeyup="searchProdct()"  id="searchValue" type="text" class="form-control my-5 w-75 mx-auto">
+<!-- end search -->
+<!-- start table -->
+<table class="table my-5  ">
+
+    <tbody id="tableBody">
+  
+
+    </tbody>
+  </table>
+    <!-- end table -->
+    <!-- start footer -->
+<div class="footer w-25 text-muted ">
+    <p>©2019 BookMarker Inc.</p>
+</div>
+<!-- end footer -->
+</div>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/script.js"></script> 
+</body>
+</html>
